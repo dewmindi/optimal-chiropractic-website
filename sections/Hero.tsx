@@ -40,10 +40,10 @@ const Hero: React.FC = () => {
           transition={{ duration: 1, ease: "easeOut" }}
         >
           <p className="text-brand-orange uppercase tracking-[0.3em] text-sm font-semibold mb-6">
-            Optimal Chiropractic
+             {HERO_CONTENT.headline}
           </p>
           <h1 className="font-heading text-5xl md:text-7xl lg:text-8xl text-brand-black leading-tight mb-8">
-            {HERO_CONTENT.headline}
+            Optimal Chiropractic
           </h1>
         </motion.div>
 
