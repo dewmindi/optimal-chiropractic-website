@@ -14,19 +14,15 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      # 3. Install pnpm
-      - name: Install pnpm
-        run: npm install -g pnpm
-
-      # 4. Install dependencies with caching
+      # 2 Install dependencies
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+        run: npm ci
 
-      # 5. Build Next.js
+      # 3. Build Next.js
       - name: Build Next.js
-        run: pnpm build
+        run: npm run build
 
-      # 6. Deploy to VPS via SSH
+      # 4. Deploy to VPS via SSH
       - name: Deploy to VPS
         uses: appleboy/ssh-action@v0.1.7
         with:
@@ -35,10 +31,9 @@ jobs:
           key: ${{ secrets.VPS_SSH_KEY }}
           port: ${{ secrets.VPS_PORT }}
           script: |
-            source ~/.bashrc
-            cd /htdocs/dev.optimalchiropractic.com.au
+            cd /home/chiropractic-dev/htdocs/dev.optimalchiropractic.com.au
             git reset --hard
             git pull origin main
-            pnpm install --frozen-lockfile
-            pnpm build
+            npm ci
+            npm run build
             pm2 restart optimal-chiropractic || pm2 start npm --name "optimal-chiropractic" -- start
