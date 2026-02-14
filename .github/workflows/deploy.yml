@@ -31,9 +31,17 @@ jobs:
           key: ${{ secrets.VPS_SSH_KEY }}
           port: ${{ secrets.VPS_PORT }}
           script: |
+            # Load user-local npm bin
+            export PATH="$HOME/.npm-global/bin:$PATH"
+
+            # Navigate to project directory
             cd /home/chiropractic-dev/htdocs/dev.optimalchiropractic.com.au
+
             git reset --hard
             git pull origin main
+
             npm ci --legacy-peer-deps
+
             npm run build
+            
             pm2 restart optimal-chiropractic || pm2 start npm --name "optimal-chiropractic" -- start
