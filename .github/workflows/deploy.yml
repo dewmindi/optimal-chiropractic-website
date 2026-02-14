@@ -35,7 +35,8 @@ jobs:
           key: ${{ secrets.VPS_SSH_KEY }}
           port: ${{ secrets.VPS_PORT }}
           script: |
-            cd /path/to/your/app
+            source ~/.bashrc
+            cd /htdocs/dev.optimalchiropractic.com.au
             git reset --hard
             git pull origin main
             pnpm install --frozen-lockfile
