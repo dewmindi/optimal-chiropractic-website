@@ -33,6 +33,9 @@ jobs:
           script: |
             # Load user-local npm bin
             export PATH="$HOME/.npm-global/bin:$PATH"
+            
+            # Add nvm Node to PATH
+            export PATH=/home/chiropractic-dev/.nvm/versions/node/v22.22.0/bin:$PATH
 
             # Navigate to project directory
             cd /home/chiropractic-dev/htdocs/dev.optimalchiropractic.com.au
@@ -43,5 +46,5 @@ jobs:
             npm ci --legacy-peer-deps
 
             npm run build
-            
+
             pm2 restart optimal-chiropractic || pm2 start npm --name "optimal-chiropractic" -- start
