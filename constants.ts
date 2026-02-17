@@ -13,6 +13,15 @@ import {
 export const BRAND_NAME = "Optimal Chiropractic";
 export const DOCTOR_NAME = "Dr. Jengis Zekirovski";
 
+import ChiroAdjustment from './public/ChiropracticAdjustment.webp';
+import ChiroAssessment from './public/ChiropracticAssessment.webp';
+import PostureCorrection from './public/PostureCorrection.webp';
+import Spinal from './public/SpinalOrthotics.webp';
+import SpinalTherapy from './public/SpinalWellnessTherapy.webp';
+import YStrap from './public/YStrapAdjustment.webp';
+
+import ChiropracticDoctor from './public/ChiropracticDoctor.jpeg';  
+
 export const NAVIGATION_LINKS = [
   { name: 'About', href: '#about' },
   { name: 'Services', href: '#services' },
@@ -39,7 +48,7 @@ export const ABOUT_CONTENT = {
     `Led by ${DOCTOR_NAME}, ${BRAND_NAME} delivers evidence-based spinal care using advanced diagnostic methods and precision adjustment techniques.`,
     "Our mission is to restore alignment, relieve pain, and improve your overall quality of life — naturally, safely, and effectively. We believe that true wellness comes from a perfectly balanced nervous system."
   ],
-  image: "https://picsum.photos/800/1000?grayscale&blur=1", // Placeholder for doctor's portrait
+  image: ChiropracticDoctor, // Placeholder for doctor's portrait
   philosophy: {
     title: "Our Philosophy",
     content: "We believe in the body's innate ability to heal itself. Our role is to remove the interference—the subluxations—that prevent your nervous system from functioning at its peak. By restoring structural integrity, we unlock your body's potential for optimal health.",
@@ -93,7 +102,7 @@ export const SERVICES_CONTENT = [
       "Reduced inflammation",
       "Enhanced nervous system function"
     ],
-    image: "https://picsum.photos/800/600?grayscale&random=10",
+    image: ChiroAdjustment,
     icon: Move
   },
   {
@@ -107,7 +116,7 @@ export const SERVICES_CONTENT = [
       "Identification of hidden issues",
       "Baseline for progress tracking"
     ],
-    image: "https://picsum.photos/800/600?grayscale&random=11",
+    image: ChiroAssessment,
     icon: Activity
   },
   {
@@ -121,7 +130,7 @@ export const SERVICES_CONTENT = [
       "Enhanced athletic performance",
       "Prevention of foot deformities"
     ],
-    image: "https://picsum.photos/800/600?grayscale&random=12",
+    image: Spinal,
     icon: UserCheck
   },
   {
@@ -135,7 +144,7 @@ export const SERVICES_CONTENT = [
       "Improved disc hydration",
       "Release of chronic tension"
     ],
-    image: "https://picsum.photos/800/600?grayscale&random=13",
+    image: YStrap,
     icon: AlignVerticalJustifyCenter
   },
   {
@@ -149,7 +158,7 @@ export const SERVICES_CONTENT = [
       "Prevention of degeneration",
       "More confident appearance"
     ],
-    image: "https://picsum.photos/800/600?grayscale&random=14",
+    image: PostureCorrection,
     icon: Brain
   },
   {
@@ -163,7 +172,7 @@ export const SERVICES_CONTENT = [
       "Boosted immune function",
       "Prevention of relapse"
     ],
-    image: "https://picsum.photos/800/600?grayscale&random=15",
+    image: SpinalTherapy,
     icon: Sparkles
   }
 ];
@@ -196,7 +205,7 @@ export const TREATMENTS_BENTO = [
     id: 't1',
     title: "Y-Strap Adjustment",
     subtitle: "Decompression",
-    image: "https://picsum.photos/600/600?random=1",
+    image: YStrap,
     colSpan: "col-span-1 md:col-span-2",
     rowSpan: "row-span-2"
   },
@@ -204,7 +213,7 @@ export const TREATMENTS_BENTO = [
     id: 't2',
     title: "Spinal Decompression",
     subtitle: "Non-surgical relief",
-    image: "https://picsum.photos/600/400?random=2",
+    image: Spinal,
     colSpan: "col-span-1",
     rowSpan: "row-span-1"
   },
@@ -212,15 +221,31 @@ export const TREATMENTS_BENTO = [
     id: 't3',
     title: "Digital Posture Analysis",
     subtitle: "Tech-driven insight",
-    image: "https://picsum.photos/600/400?random=3",
-    colSpan: "col-span-1",
+    image: PostureCorrection,
+    colSpan: "col-span-1 md:col-span-1",
     rowSpan: "row-span-1"
   },
-  {
+    {
     id: 't4',
     title: "Orthotic Therapy",
     subtitle: "Foundation Support",
-    image: "https://picsum.photos/600/300?random=4",
+    image: ChiroAdjustment,
+    colSpan: "col-span-1 md:col-span-1",
+    rowSpan: "row-span-1"
+  },
+      {
+    id: 't5',
+    title: "Orthotic Therapy",
+    subtitle: "Foundation Support",
+    image: ChiroAdjustment,
+    colSpan: "col-span-1 md:col-span-1",
+    rowSpan: "row-span-1"
+  },
+  {
+    id: 't6',
+    title: "Orthotic Therapy",
+    subtitle: "Foundation Support",
+    image: ChiroAdjustment,
     colSpan: "col-span-1 md:col-span-3",
     rowSpan: "row-span-1"
   }
@@ -248,8 +273,15 @@ export const TESTIMONIALS = [
 ];
 
 export const CONTACT_INFO = {
-  address: "123 Wellness Blvd, Medical District, Suite 400",
-  phone: "(555) 123-4567",
-  email: "care@optimalchiropractic.com",
+  address: "107 South Road, Braybrook, Victoria, 3019",
+  phone: " 045 204 3345",
+  email: "info@optimalchiropractic.com.au",
   hours: "Mon-Fri: 8am - 6pm | Sat: 9am - 1pm"
 };
+
+export const SOCIAL_LINKS = [
+  { name: 'Instagram', url: 'https://www.instagram.com/optimalchiro_?igsh=dzZ3ZmV3YjEzNG80&utm_source=qr' },
+  { name: 'Facebook', url: 'https://www.facebook.com/share/1ATsAbvsYz/?mibextid=wwXIfr'},
+  { name: 'LinkedIn', url: 'https://www.linkedin.com/company/optimalchiropractic/' },
+  { name: 'TikTok', url: 'https://www.tiktok.com/@optimalchiropractic' },
+];

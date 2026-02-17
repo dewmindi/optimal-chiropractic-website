@@ -1,6 +1,7 @@
 import React from 'react';
 import { ABOUT_CONTENT } from '../constants';
 import { Section, FadeIn } from '../components/Section';
+import Image from 'next/image';
 
 const About: React.FC = () => {
   return (
@@ -10,7 +11,13 @@ const About: React.FC = () => {
         <FadeIn className="relative">
           <div className="absolute top-4 left-4 w-full h-full border border-brand-orange/30 z-0"></div>
           <div className="relative z-10 overflow-hidden aspect-[3/4]">
-             <img 
+             {/* <img 
+               src={ABOUT_CONTENT.image} 
+               alt="Dr. Zekirovski" 
+               className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+             /> */}
+
+             <Image 
                src={ABOUT_CONTENT.image} 
                alt="Dr. Zekirovski" 
                className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"

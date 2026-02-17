@@ -1,6 +1,7 @@
 import React from 'react';
 import { TREATMENTS_BENTO } from '../constants';
 import { Section, FadeIn } from '../components/Section';
+import Image from 'next/image';
 
 const Treatments: React.FC = () => {
   return (
@@ -17,12 +18,12 @@ const Treatments: React.FC = () => {
             className={`relative group overflow-hidden rounded-md ${item.colSpan} ${item.rowSpan}`}
           >
             <div className="w-full h-full relative">
-              <img 
-                src={item.image} 
-                alt={item.title} 
+              <Image
+                src={item.image}
+                alt={item.title}
                 className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
               />
-              <div className="absolute inset-0 bg-brand-black/20 group-hover:bg-brand-black/40 transition-colors duration-500"></div>
+            <div className="absolute inset-0 bg-brand-black/20 group-hover:bg-brand-black/40 transition-colors duration-500"></div>
               
               {/* Overlay Content */}
               <div className="absolute inset-0 p-8 flex flex-col justify-end">

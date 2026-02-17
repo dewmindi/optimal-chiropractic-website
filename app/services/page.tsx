@@ -3,10 +3,12 @@
 import React, { useState } from 'react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../sections/Footer';
-import ServiceModal from '../../components/ServiceModal';
+
 import { SERVICES_CONTENT } from '../../constants';
 import { FadeIn } from '../../components/Section';
 import { ArrowRight } from 'lucide-react';
+import Image from 'next/image';
+import ServiceModal from '@/components/ServiceModal';
 
 export default function ServicesPage() {
   const [selectedService, setSelectedService] = useState<any>(null);
@@ -35,10 +37,10 @@ export default function ServicesPage() {
               <div key={service.id} className="w-full flex flex-col lg:flex-row h-auto lg:h-[600px] group overflow-hidden">
                 {/* Image Section */}
                 <div className={`w-full lg:w-1/2 relative overflow-hidden h-[400px] lg:h-full ${isEven ? 'lg:order-1' : 'lg:order-2'}`}>
-                  <div className="absolute inset-0 bg-brand-black/20 z-10 group-hover:bg-brand-black/0 transition-colors duration-700"></div>
-                  <img 
-                    src={service.image} 
-                    alt={service.title} 
+                  <div className="absolute inset-0 bg-brand-black/20 z-10 group-hover:bg-brand-black/0 transition-colors duration-700"></div>   
+                  <Image
+                    src={service.image}
+                    alt={service.title}
                     className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
                   />
                 </div>

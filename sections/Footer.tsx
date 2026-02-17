@@ -1,5 +1,5 @@
 import React from 'react';
-import { BRAND_NAME } from '../constants';
+import { BRAND_NAME, SOCIAL_LINKS } from '../constants';
 
 const Footer: React.FC = () => {
   return (
@@ -11,10 +11,15 @@ const Footer: React.FC = () => {
         </div>
         
         <div className="flex gap-6">
-           {/* Social Placeholders */}
-           {['Instagram', 'Facebook', 'LinkedIn'].map(social => (
-             <a key={social} href="#" className="text-xs uppercase tracking-widest text-brand-black/60 hover:text-brand-orange transition-colors">
-               {social}
+           {SOCIAL_LINKS.map((social: { name: string; url: string }) => (
+             <a 
+               key={social.name}
+               href={social.url}
+               target="_blank"
+               rel="noopener noreferrer"
+               className="text-xs uppercase tracking-widest text-brand-black/60 hover:text-brand-orange transition-colors"
+             >
+               {social.name}
              </a>
            ))}
         </div>

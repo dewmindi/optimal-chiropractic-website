@@ -67,11 +67,17 @@ export default function ContactPage() {
                 </div>
               </FadeIn>
               
-              {/* Map Placeholder */}
-              <FadeIn delay={0.2} className="w-full h-64 bg-gray-200 rounded-2xl overflow-hidden relative">
-                 <div className="absolute inset-0 flex items-center justify-center bg-brand-black/5">
-                    <p className="text-brand-black/40 font-heading text-2xl">Map Integration Placeholder</p>
-                 </div>
+              {/* Map Integration */}
+              <FadeIn delay={0.2} className="w-full h-96 bg-gray-200 rounded-2xl overflow-hidden relative shadow-lg">
+                 <iframe 
+                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3152.958112839891!2d144.8465024!3d-37.7910214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65f7c2105d6c9%3A0x6b90dd529b072cfd!2sOptimal%20Chiropractic%20Braybrook!5e0!3m2!1sen!2slk!4v1771358444287!5m2!1sen!2slk" 
+                   width="100%" 
+                   height="100%" 
+                   style={{ border: 0 }} 
+                   allowFullScreen 
+                   loading="lazy" 
+                   referrerPolicy="no-referrer-when-downgrade">
+                 </iframe>
               </FadeIn>
             </div>
 
