@@ -13,9 +13,14 @@ const Contact: React.FC = () => {
           <p className="text-lg font-light text-cream/70 mb-10 max-w-md">
             Schedule your comprehensive assessment today and take the first step towards optimal wellness.
           </p>
-          <button className="px-10 py-5 bg-brand-orange text-white uppercase tracking-widest text-sm font-semibold hover:bg-white hover:text-brand-black transition-colors shadow-lg shadow-brand-orange/20">
+          <a 
+            href="https://optimal-chiropractic-braybrook.au5.cliniko.com/bookings?embedded=true"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block px-10 py-5 bg-brand-orange text-white uppercase tracking-widest text-sm font-semibold hover:bg-white hover:text-brand-black transition-colors shadow-lg shadow-brand-orange/20"
+          >
             Book Appointment
-          </button>
+          </a>
         </FadeIn>
 
         <FadeIn delay={0.2} className="bg-white/5 backdrop-blur-sm p-10 border border-white/10 rounded-sm">

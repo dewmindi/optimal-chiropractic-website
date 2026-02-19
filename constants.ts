@@ -19,8 +19,11 @@ import PostureCorrection from './public/PostureCorrection.webp';
 import Spinal from './public/SpinalOrthotics.webp';
 import SpinalTherapy from './public/SpinalWellnessTherapy.webp';
 import YStrap from './public/YStrapAdjustment.webp';
-
 import ChiropracticDoctor from './public/ChiropracticDoctor.jpeg';  
+
+import ChiropracticTreatment from './public/Chiropractic-assessment-treatement.webp';
+import OrthoticTreatment from './public/Orthotic-therapy-treatment.webp';
+import SpinalTreatment from './public/Spinal-wellness-therapy-treatment.webp';
 
 export const NAVIGATION_LINKS = [
   { name: 'About', href: '#about' },
@@ -46,7 +49,7 @@ export const ABOUT_CONTENT = {
   subtitle: "Medical Authority & Human Trust",
   description: [
     `Led by ${DOCTOR_NAME}, ${BRAND_NAME} delivers evidence-based spinal care using advanced diagnostic methods and precision adjustment techniques.`,
-    "Our mission is to restore alignment, relieve pain, and improve your overall quality of life — naturally, safely, and effectively. We believe that true wellness comes from a perfectly balanced nervous system."
+    "Our mission is to restore alignment, relieve pain, and improve your overall quality of life  naturally, safely, and effectively. We believe that true wellness comes from a perfectly balanced nervous system."
   ],
   image: ChiropracticDoctor, // Placeholder for doctor's portrait
   philosophy: {
@@ -60,13 +63,13 @@ export const ABOUT_CONTENT = {
     ]
   },
   qualifications: [
+    // {
+    //   year: "2008",
+    //   degree: "Doctor of Chiropractic",
+    //   institution: "RMIT University"
+    // },
     {
-      year: "2008",
-      degree: "Doctor of Chiropractic",
-      institution: "RMIT University"
-    },
-    {
-      year: "2005",
+      year: "2020",
       degree: "Bachelor of Health Science",
       institution: "University of Melbourne"
     }
@@ -229,21 +232,21 @@ export const TREATMENTS_BENTO = [
     id: 't4',
     title: "Orthotic Therapy",
     subtitle: "Foundation Support",
-    image: ChiroAdjustment,
+    image: OrthoticTreatment,
     colSpan: "col-span-1 md:col-span-1",
     rowSpan: "row-span-1"
   },
       {
     id: 't5',
-    title: "Orthotic Therapy",
+    title: "Spinal Wellness Therapy",
     subtitle: "Foundation Support",
-    image: ChiroAdjustment,
+    image: SpinalTreatment,
     colSpan: "col-span-1 md:col-span-1",
     rowSpan: "row-span-1"
   },
   {
     id: 't6',
-    title: "Orthotic Therapy",
+    title: "Chiropractic Adjustment",
     subtitle: "Foundation Support",
     image: ChiroAdjustment,
     colSpan: "col-span-1 md:col-span-3",
@@ -276,7 +279,7 @@ export const CONTACT_INFO = {
   address: "107 South Road, Braybrook, Victoria, 3019",
   phone: " 045 204 3345",
   email: "info@optimalchiropractic.com.au",
-  hours: "Mon-Fri: 8am - 6pm | Sat: 9am - 1pm"
+  hours: "Mon-Fri: 9am - 7pm | Sat: 9am - 12pm"
 };
 
 export const SOCIAL_LINKS = [

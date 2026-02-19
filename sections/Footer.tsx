@@ -8,6 +8,8 @@ const Footer: React.FC = () => {
         <div className="text-center md:text-left">
           <p className="font-heading text-2xl font-bold text-brand-black uppercase">{BRAND_NAME}</p>
           <p className="text-xs text-brand-black/50 mt-2">© {new Date().getFullYear()} All Rights Reserved.</p>
+          <p className="text-xs text-brand-black/50 mt-2">Registration: number CHI0002452446</p>
+          <p className="text-xs text-brand-black/50 mt-2">ABN: 51 656 432 996 (zek chiropractic pty Ltd)</p>
         </div>
         
         <div className="flex gap-6">

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import BookingModal from './BookingModal';
 import Link from 'next/link';
 import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -7,6 +8,7 @@ import { NAVIGATION_LINKS } from '../constants';
 const Navbar: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [isBookingModalOpen, setBookingModalOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 50);
@@ -67,9 +69,9 @@ const Navbar: React.FC = () => {
           
            {/* Placeholder for balance on right side desktop */}
            <div className="hidden md:block w-32 text-right">
-              <Link href="/#contact" className="text-xs font-bold uppercase tracking-widest border-b border-brand-black/20 pb-1 hover:border-brand-orange transition-colors">
+              <button onClick={() => setBookingModalOpen(true)} className="text-xs font-bold uppercase tracking-widest border-b border-brand-black/20 pb-1 hover:border-brand-orange transition-colors">
                 Book Now
-              </Link>
+              </button>
            </div>
         </div>
       </nav>
@@ -94,17 +96,17 @@ const Navbar: React.FC = () => {
               </Link>
             ))}
             <div className="pt-8">
-               <Link 
-                href="/#contact"
-                onClick={() => setMobileMenuOpen(false)}
+               <button 
+                onClick={() => {setMobileMenuOpen(false); setBookingModalOpen(true);}}
                 className="px-8 py-3 bg-brand-black text-cream uppercase tracking-widest text-sm"
                >
                  Book Appointment
-               </Link>
+               </button>
             </div>
           </motion.div>
         )}
       </AnimatePresence>
+      <BookingModal isOpen={isBookingModalOpen} onClose={() => setBookingModalOpen(false)} />
     </>
   );
 };

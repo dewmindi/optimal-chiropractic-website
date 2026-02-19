@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import { TREATMENTS_BENTO } from '../constants';
 import { Section, FadeIn } from '../components/Section';
 import Image from 'next/image';
@@ -12,8 +13,8 @@ const Treatments: React.FC = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 auto-rows-[300px]">
         {TREATMENTS_BENTO.map((item, index) => (
-          <FadeIn 
-            key={item.id} 
+          <FadeIn
+            key={item.id}
             delay={index * 0.1}
             className={`relative group overflow-hidden rounded-md ${item.colSpan} ${item.rowSpan}`}
           >
@@ -24,7 +25,7 @@ const Treatments: React.FC = () => {
                 className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
               />
             <div className="absolute inset-0 bg-brand-black/20 group-hover:bg-brand-black/40 transition-colors duration-500"></div>
-              
+
               {/* Overlay Content */}
               <div className="absolute inset-0 p-8 flex flex-col justify-end">
                 <div className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
@@ -37,6 +38,7 @@ const Treatments: React.FC = () => {
                 </div>
               </div>
             </div>
+            <Link href="/treatments" className="absolute inset-0 z-10" />
           </FadeIn>
         ))}
       </div>

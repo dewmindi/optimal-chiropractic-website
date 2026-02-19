@@ -11,12 +11,6 @@ const About: React.FC = () => {
         <FadeIn className="relative">
           <div className="absolute top-4 left-4 w-full h-full border border-brand-orange/30 z-0"></div>
           <div className="relative z-10 overflow-hidden aspect-[3/4]">
-             {/* <img 
-               src={ABOUT_CONTENT.image} 
-               alt="Dr. Zekirovski" 
-               className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
-             /> */}
-
              <Image 
                src={ABOUT_CONTENT.image} 
                alt="Dr. Zekirovski" 
@@ -46,11 +40,11 @@ const About: React.FC = () => {
              <div className="h-px w-24 bg-brand-orange/50 mb-8"></div>
              <div className="grid grid-cols-2 gap-8">
                 <div>
-                  <h4 className="font-heading text-3xl text-brand-black">15+</h4>
+                  <h4 className="font-heading text-3xl text-brand-black">8+</h4>
                   <p className="text-xs uppercase tracking-widest text-slate mt-1">Years Experience</p>
                 </div>
                 <div>
-                  <h4 className="font-heading text-3xl text-brand-black">5k+</h4>
+                  <h4 className="font-heading text-3xl text-brand-black">1k+</h4>
                   <p className="text-xs uppercase tracking-widest text-slate mt-1">Patients Healed</p>
                 </div>
              </div>
