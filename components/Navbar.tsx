@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import BookingModal from './BookingModal';
 import Link from 'next/link';
 import { Menu, X } from 'lucide-react';
+import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import { NAVIGATION_LINKS } from '../constants';
 
@@ -38,9 +39,15 @@ const Navbar: React.FC = () => {
       >
         <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
           {/* Logo / Brand */}
-          <div className="flex-1 md:flex-none md:w-32">
-             <Link href="/" className={`font-heading text-2xl tracking-wide font-bold uppercase transition-colors ${scrolled || mobileMenuOpen ? 'text-brand-black' : 'text-brand-black'}`}>
-               Optimal<span className="text-brand-orange">.</span>
+          <div className="flex-1 md:flex-none md:w-48">
+             <Link href="/">
+                <Image 
+                  src="/optimal-chiropractic-logo.webp" 
+                  alt="Optimal Chiropractic Logo" 
+                  width={180} 
+                  height={40} 
+                  className="w-full h-auto"
+                />
              </Link>
           </div>
 

@@ -21,6 +21,9 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
   title: "Optimal Chiropractic | Dr. Jengis Zekirovski",
   description: "Precision Chiropractic Care for Total Spinal Wellness led by Dr. Jengis Zekirovski.",
+  icons: {
+    icon: 'favicon.ico',
+  },
 };
 
 export default function RootLayout({
