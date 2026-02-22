@@ -19,9 +19,15 @@ const WhyChooseUs: React.FC = () => {
             <p className="text-cream/70 font-light text-lg mb-10">
               We combine the art of healing with the science of medicine to provide a superior standard of care.
             </p>
-            <button className="px-8 py-4 border border-cream/20 hover:bg-cream hover:text-brand-black transition-colors uppercase tracking-widest text-xs">
+            
+            <a 
+              href="https://optimal-chiropractic-braybrook.au5.cliniko.com/bookings"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-8 py-4 border border-cream/20 hover:bg-cream hover:text-brand-black transition-colors uppercase tracking-widest text-xs"
+            >
               Book Consultation
-            </button>
+            </a>
           </FadeIn>
         </div>
 

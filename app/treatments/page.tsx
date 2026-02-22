@@ -7,6 +7,7 @@ import Navbar from '../../components/Navbar';
 import Footer from '../../sections/Footer';
 import { Section, FadeIn } from '../../components/Section';
 import { TREATMENT_HERO, CONDITIONS_TREATED, TREATMENT_APPROACH, TREATMENT_FAQ } from '../../TreatmentConstants';
+import Link from 'next/link';
 
 export default function TreatmentsPage() {
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(null);
@@ -23,14 +24,14 @@ export default function TreatmentsPage() {
         {/* Hero Section */}
         <Section className="pb-20">
           <div className="text-center max-w-4xl mx-auto px-6">
-            <FadeIn>
+            {/* <FadeIn> */}
               <span className="text-brand-orange text-sm uppercase tracking-widest font-semibold block mb-3">Holistic Healing</span>
               <h1 className="font-heading text-5xl md:text-6xl text-brand-black mb-6">{TREATMENT_HERO.title}</h1>
               <p className="text-xl md:text-2xl text-brand-black/60 font-light mb-8">{TREATMENT_HERO.subtitle}</p>
               <p className="text-brand-black/80 leading-relaxed text-lg max-w-2xl mx-auto">
                 {TREATMENT_HERO.description}
               </p>
-            </FadeIn>
+            {/* </FadeIn> */}
           </div>
         </Section>
 
@@ -74,10 +75,10 @@ export default function TreatmentsPage() {
               <p className="text-cream/60 text-lg font-light leading-relaxed mb-8">
                 Healing is a journey, not a destination. We guide you through three distinct phases of care to ensure lasting results.
               </p>
-              <a href="#contact" className="inline-flex items-center space-x-2 text-brand-orange border-b border-brand-orange pb-1 hover:text-white hover:border-white transition-colors">
+              <Link href="/contact" className="inline-flex items-center space-x-2 text-brand-orange border-b border-brand-orange pb-1 hover:text-white hover:border-white transition-colors">
                 <span>Start Your Journey</span>
                 <ArrowRight size={16} />
-              </a>
+              </Link>
             </FadeIn>
 
             <div className="space-y-8">

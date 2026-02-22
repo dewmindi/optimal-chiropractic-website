@@ -20,13 +20,13 @@ export default function ServicesPage() {
       <main className="pt-24 pb-20">
         {/* Header */}
         <div className="text-center mb-20 px-6">
-          <FadeIn>
+          {/* <FadeIn> */}
             <span className="text-brand-orange text-sm uppercase tracking-widest font-semibold block mb-3">Our Expertise</span>
             <h1 className="font-heading text-5xl md:text-6xl text-brand-black mb-6">Comprehensive Care</h1>
             <p className="max-w-2xl mx-auto text-brand-black/70 text-lg leading-relaxed">
               We offer a full spectrum of chiropractic services designed to restore your body's natural balance and optimize your health potential.
             </p>
-          </FadeIn>
+          {/* </FadeIn> */}
         </div>
 
         {/* Services List */}

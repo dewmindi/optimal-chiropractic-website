@@ -17,7 +17,7 @@ export default function ContactPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
             {/* Left Side: Info & Map */}
             <div className="space-y-16">
-              <FadeIn>
+              {/* <FadeIn> */}
                 <span className="text-brand-orange text-sm uppercase tracking-widest font-semibold block mb-3">Get in Touch</span>
                 <h1 className="font-heading text-5xl md:text-6xl text-brand-black mb-8">We're Here to Help</h1>
                 <p className="text-brand-black/70 text-lg leading-relaxed mb-12">
@@ -65,7 +65,7 @@ export default function ContactPage() {
                     </div>
                   </div>
                 </div>
-              </FadeIn>
+              {/* </FadeIn> */}
               
               {/* Map Integration */}
               <FadeIn delay={0.2} className="w-full h-96 bg-gray-200 rounded-2xl overflow-hidden relative shadow-lg">

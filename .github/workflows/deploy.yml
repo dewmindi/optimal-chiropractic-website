@@ -48,3 +48,5 @@ jobs:
             npm run build
 
             pm2 restart optimal-chiropractic || pm2 start npm --name "optimal-chiropractic" -- start
+
+

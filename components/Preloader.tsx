@@ -14,7 +14,7 @@ const Preloader: React.FC<PreloaderProps> = ({ onComplete }) => {
 
   useEffect(() => {
     const startTime = Date.now();
-    const duration = 2500; // 2.5s simulated load
+    const duration = 1000; // 2.5s simulated load
 
     const frame = () => {
       const now = Date.now();

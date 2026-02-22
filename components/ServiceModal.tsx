@@ -29,21 +29,21 @@ const ServiceModal: React.FC<ServiceModalProps> = ({ isOpen, onClose, service })
             onClick={onClose}
             className="fixed inset-0 z-[60] bg-brand-black/40 backdrop-blur-sm"
           />
-          
+
           {/* Modal Centering Container */}
           <div
-            className="fixed inset-0 z-[70] flex items-center justify-center p-4 md:p-8"
-            onClick={onClose} // Allow closing by clicking outside the modal content
+            className="fixed inset-0 z-[70] flex items-end md:items-center justify-center p-0 md:p-8"
+            onClick={onClose}
           >
             {/* Modal Panel */}
             <motion.div
-              initial={{ opacity: 0, scale: 0.95 }}
-              animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0, scale: 0.95 }}
-              onClick={(e) => e.stopPropagation()} // Prevent clicks inside the modal from closing it
-              className="bg-cream/95 backdrop-blur-xl border border-white/40 shadow-2xl rounded-2xl max-w-6xl w-full overflow-hidden relative"
+              initial={{ opacity: 0, y: 40 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: 40 }}
+              onClick={(e) => e.stopPropagation()}
+              className="bg-cream/95 backdrop-blur-xl border border-white/40 shadow-2xl rounded-t-2xl md:rounded-2xl max-w-6xl w-full h-[92vh] pb-6 md:pb-0 md:h-auto md:max-h-[90vh] overflow-y-auto relative"
             >
-              <button 
+              <button
                 onClick={onClose}
                 className="absolute top-3 right-3 p-2 bg-white/20 hover:bg-white/40 rounded-full transition-colors z-20"
               >
@@ -52,12 +52,12 @@ const ServiceModal: React.FC<ServiceModalProps> = ({ isOpen, onClose, service })
 
               {/* Grid Layout */}
               <div className="grid grid-cols-1 md:grid-cols-5">
-                
+
                 {/* Left Side: Image (Stays Fixed) */}
-                <div className="md:col-span-2 relative h-64 md:h-auto">
-                  <Image 
-                    src={service.image} 
-                    alt={service.title} 
+                <div className="md:col-span-2 relative h-52 sm:h-64 md:h-auto">
+                  <Image
+                    src={service.image}
+                    alt={service.title}
                     layout="fill"
                     objectFit="cover"
                     className="rounded-l-2xl"
@@ -74,9 +74,9 @@ const ServiceModal: React.FC<ServiceModalProps> = ({ isOpen, onClose, service })
                       </div>
                       <span className="text-sm font-bold uppercase tracking-widest text-brand-orange">Service Details</span>
                     </div>
-                    
+
                     <h2 className="font-heading text-3xl md:text-4xl text-brand-black mb-4">{service.title}</h2>
-                    
+
                     <p className="text-brand-black/80 leading-relaxed mb-6">
                       {service.detailedDescription}
                     </p>
@@ -95,8 +95,10 @@ const ServiceModal: React.FC<ServiceModalProps> = ({ isOpen, onClose, service })
                   </div>
 
                   <div className="pt-8 mt-auto">
-                     <Link 
-                      href="/contact" 
+                    <Link
+                      href="https://optimal-chiropractic-braybrook.au5.cliniko.com/bookings"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       onClick={onClose}
                       className="inline-block w-full text-center bg-brand-black text-cream py-4 uppercase tracking-widest text-sm font-medium rounded-lg hover:bg-brand-orange transition-colors duration-300"
                     >

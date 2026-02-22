@@ -17,7 +17,7 @@ export default function AboutPage() {
         {/* Philosophy Section */}
         <Section id="philosophy" className="bg-white/50 backdrop-blur-sm">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <FadeIn className="space-y-6">
+            {/* <FadeIn className="space-y-6"> */}
               <span className="text-brand-orange text-sm uppercase tracking-widest font-semibold block mb-2">Philosophy</span>
               <h2 className="font-heading text-4xl text-brand-black">{ABOUT_CONTENT.philosophy.title}</h2>
               <p className="text-brand-black/80 font-light leading-relaxed text-lg">
@@ -31,9 +31,9 @@ export default function AboutPage() {
                   </li>
                 ))}
               </ul>
-            </FadeIn>
+            {/* </FadeIn> */}
             
-            <FadeIn delay={0.2} className="relative p-8 bg-glass rounded-2xl border border-white/40 shadow-xl">
+            {/* <FadeIn delay={0.2} className="relative p-8 bg-glass rounded-2xl border border-white/40 shadow-xl"> */}
               <h3 className="font-heading text-2xl text-brand-black mb-6 border-b border-brand-black/10 pb-4">Qualifications</h3>
               <div className="space-y-6">
                 {ABOUT_CONTENT.qualifications.map((qual, index) => (
@@ -46,7 +46,7 @@ export default function AboutPage() {
                   </div>
                 ))}
               </div>
-            </FadeIn>
+            {/* </FadeIn> */}
           </div>
         </Section>
 

@@ -14,7 +14,7 @@ const Contact: React.FC = () => {
             Schedule your comprehensive assessment today and take the first step towards optimal wellness.
           </p>
           <a 
-            href="https://optimal-chiropractic-braybrook.au5.cliniko.com/bookings?embedded=true"
+            href="https://optimal-chiropractic-braybrook.au5.cliniko.com/bookings"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block px-10 py-5 bg-brand-orange text-white uppercase tracking-widest text-sm font-semibold hover:bg-white hover:text-brand-black transition-colors shadow-lg shadow-brand-orange/20"

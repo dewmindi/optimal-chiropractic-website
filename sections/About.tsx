@@ -8,7 +8,7 @@ const About: React.FC = () => {
     <Section id="about" className="bg-cream">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
         {/* Image Side */}
-        <FadeIn className="relative">
+        {/* <FadeIn className="relative"> */}
           <div className="absolute top-4 left-4 w-full h-full border border-brand-orange/30 z-0"></div>
           <div className="relative z-10 overflow-hidden aspect-[3/4]">
              <Image 
@@ -21,10 +21,10 @@ const About: React.FC = () => {
                <p className="text-xs uppercase tracking-widest text-slate mt-1">Lead Chiropractor</p>
              </div>
           </div>
-        </FadeIn>
+        {/* </FadeIn> */}
 
         {/* Text Side */}
-        <FadeIn delay={0.2} className="space-y-8">
+        {/* <FadeIn delay={0.2} className="space-y-8"> */}
           <div>
             <span className="text-brand-orange text-sm uppercase tracking-widest font-semibold block mb-2">{ABOUT_CONTENT.title}</span>
             <h2 className="font-heading text-4xl md:text-5xl text-brand-black leading-tight">{ABOUT_CONTENT.subtitle}</h2>
@@ -49,7 +49,7 @@ const About: React.FC = () => {
                 </div>
              </div>
           </div>
-        </FadeIn>
+        {/* </FadeIn> */}
       </div>
     </Section>
   );

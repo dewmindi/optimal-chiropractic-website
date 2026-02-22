@@ -39,17 +39,18 @@ const Navbar: React.FC = () => {
       >
         <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
           {/* Logo / Brand */}
-          <div className="flex-1 md:flex-none md:w-48">
-             <Link href="/">
-                <Image 
-                  src="/optimal-chiropractic-logo.webp" 
-                  alt="Optimal Chiropractic Logo" 
-                  width={180} 
-                  height={40} 
-                  className="w-full h-auto"
-                />
-             </Link>
-          </div>
+          <div className="flex items-center">
+  <Link href="/" className="block">
+    <Image 
+      src="/optimal-chiropractic-logo.webp" 
+      alt="Optimal Chiropractic Logo" 
+      width={140} 
+      height={50} 
+      className="w-[120px] sm:w-[140px] md:w-[180px] h-auto"
+      priority
+    />
+  </Link>
+</div>
 
           {/* Desktop Menu - Centered */}
           <div className="hidden md:flex items-center space-x-8 lg:space-x-12 absolute left-1/2 transform -translate-x-1/2">
