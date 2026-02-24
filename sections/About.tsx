@@ -44,7 +44,7 @@ const About: React.FC = () => {
                   <p className="text-xs uppercase tracking-widest text-slate mt-1">Years Experience</p>
                 </div>
                 <div>
-                  <h4 className="font-heading text-3xl text-brand-black">1k+</h4>
+                  <h4 className="font-heading text-3xl text-brand-black">10k+</h4>
                   <p className="text-xs uppercase tracking-widest text-slate mt-1">Patients Healed</p>
                 </div>
              </div>

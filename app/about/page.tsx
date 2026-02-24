@@ -51,7 +51,7 @@ export default function AboutPage() {
         </Section>
 
         {/* Team Section */}
-        <Section id="team" className="bg-cream">
+        {/* <Section id="team" className="bg-cream">
           <div className="text-center mb-16">
             <span className="text-brand-orange text-sm uppercase tracking-widest font-semibold block mb-2">Our Team</span>
             <h2 className="font-heading text-4xl text-brand-black">Meet the Professionals</h2>
@@ -74,7 +74,7 @@ export default function AboutPage() {
                </FadeIn>
              ))}
           </div>
-        </Section>
+        </Section> */}
       </main>
       <Footer />
     </div>

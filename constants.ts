@@ -46,7 +46,7 @@ export const HERO_CONTENT = {
 
 export const ABOUT_CONTENT = {
   title: "The Doctor",
-  subtitle: "Medical Authority & Human Trust",
+  subtitle: "Clinical Director and Chiropractor",
   description: [
     `Led by ${DOCTOR_NAME}, ${BRAND_NAME} delivers evidence-based spinal care using advanced diagnostic methods and precision adjustment techniques.`,
     "Our mission is to restore alignment, relieve pain, and improve your overall quality of life  naturally, safely, and effectively. We believe that true wellness comes from a perfectly balanced nervous system."
@@ -70,8 +70,8 @@ export const ABOUT_CONTENT = {
     // },
     {
       year: "2020",
-      degree: "Bachelor of Health Science",
-      institution: "University of Melbourne"
+      degree: "Bachelor of Health Science and Bachelor of Applied Science (Chiropractic)",
+      institution: "RMIT University"
     }
   ],
   team: [
@@ -277,9 +277,9 @@ export const TESTIMONIALS = [
 
 export const CONTACT_INFO = {
   address: "107 South Road, Braybrook, Victoria, 3019",
-  phone: " 045 204 3345",
+  phone: " 039 386 9863",
   email: "info@optimalchiropractic.com.au",
-  hours: "Mon-Fri: 9am - 7pm | Sat: 9am - 12pm"
+  hours: "Mon-Fri: 9am - 7pm | Sat - Sun : 9am - 12pm"
 };
 
 export const SOCIAL_LINKS = [

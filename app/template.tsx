@@ -5,12 +5,22 @@ import { AnimatePresence, motion } from 'framer-motion';
 import Preloader from '../components/Preloader';
 
 export default function Template({ children }: { children: React.ReactNode }) {
-  const [loading, setLoading] = useState(true);
+  const [showPreloader, setShowPreloader] = useState(() => {
+    if (typeof window !== 'undefined') {
+      return !sessionStorage.getItem('preloader_shown');
+    }
+    return true;
+  });
+
+  const handlePreloaderComplete = () => {
+    sessionStorage.setItem('preloader_shown', 'true');
+    setShowPreloader(false);
+  };
 
   return (
     <AnimatePresence mode="wait">
-      {loading ? (
-        <Preloader key="preloader" onComplete={() => setLoading(false)} />
+      {showPreloader ? (
+        <Preloader key="preloader" onComplete={handlePreloaderComplete} />
       ) : (
         <motion.div 
           key="content"

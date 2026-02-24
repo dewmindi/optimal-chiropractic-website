@@ -30,33 +30,32 @@ const Navbar: React.FC = () => {
 
   return (
     <>
-      <nav 
-        className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${
-          scrolled || mobileMenuOpen
-            ? 'bg-cream/80 backdrop-blur-md border-b border-brand-black/5 py-4' 
+      <nav
+        className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${scrolled || mobileMenuOpen
+            ? 'bg-cream/80 backdrop-blur-md border-b border-brand-black/5 py-4'
             : 'bg-transparent py-6'
-        }`}
+          }`}
       >
         <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
           {/* Logo / Brand */}
           <div className="flex items-center">
-  <Link href="/" className="block">
-    <Image 
-      src="/optimal-chiropractic-logo.webp" 
-      alt="Optimal Chiropractic Logo" 
-      width={140} 
-      height={50} 
-      className="w-[120px] sm:w-[140px] md:w-[180px] h-auto"
-      priority
-    />
-  </Link>
-</div>
+            <Link href="/" className="block">
+              <Image
+                src="/optimal-chiropractic-logo.webp"
+                alt="Optimal Chiropractic Logo"
+                width={140}
+                height={50}
+                className="w-[120px] sm:w-[140px] md:w-[180px] h-auto"
+                priority
+              />
+            </Link>
+          </div>
 
           {/* Desktop Menu - Centered */}
           <div className="hidden md:flex items-center space-x-8 lg:space-x-12 absolute left-1/2 transform -translate-x-1/2">
             {NAVIGATION_LINKS.map((link) => (
-              <Link 
-                key={link.name} 
+              <Link
+                key={link.name}
                 href={getHref(link.name)}
                 className="text-sm uppercase tracking-widest text-brand-black/80 hover:text-brand-orange transition-colors duration-300 font-medium"
               >
@@ -67,20 +66,20 @@ const Navbar: React.FC = () => {
 
           {/* Mobile Toggle */}
           <div className="md:hidden">
-            <button 
+            <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               className="text-brand-black focus:outline-none"
             >
               {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
           </div>
-          
-           {/* Placeholder for balance on right side desktop */}
-           <div className="hidden md:block w-32 text-right">
-              <button onClick={() => setBookingModalOpen(true)} className="text-xs font-bold uppercase tracking-widest border-b border-brand-black/20 pb-1 hover:border-brand-orange transition-colors">
-                Book Now
-              </button>
-           </div>
+
+          {/* Placeholder for balance on right side desktop */}
+          <div className="hidden md:block w-32 text-right">
+            <button onClick={() => setBookingModalOpen(true)} className="text-xs font-bold uppercase tracking-widest bg-brand-orange p-2 rounded-md hover:border-brand-orange transition-colors">
+              Book Now
+            </button>
+          </div>
         </div>
       </nav>
 
@@ -93,9 +92,9 @@ const Navbar: React.FC = () => {
             exit={{ opacity: 0, y: -20 }}
             className="fixed inset-0 top-[70px] z-40 bg-cream/95 backdrop-blur-xl h-screen flex flex-col items-center justify-center space-y-8 md:hidden"
           >
-             {NAVIGATION_LINKS.map((link) => (
-              <Link 
-                key={link.name} 
+            {NAVIGATION_LINKS.map((link) => (
+              <Link
+                key={link.name}
                 href={getHref(link.name)}
                 onClick={() => setMobileMenuOpen(false)}
                 className="font-heading text-4xl text-brand-black hover:text-brand-orange transition-colors"
@@ -104,12 +103,12 @@ const Navbar: React.FC = () => {
               </Link>
             ))}
             <div className="pt-8">
-               <button 
-                onClick={() => {setMobileMenuOpen(false); setBookingModalOpen(true);}}
+              <button
+                onClick={() => { setMobileMenuOpen(false); setBookingModalOpen(true); }}
                 className="px-8 py-3 bg-brand-black text-cream uppercase tracking-widest text-sm"
-               >
-                 Book Appointment
-               </button>
+              >
+                Book Appointment
+              </button>
             </div>
           </motion.div>
         )}
