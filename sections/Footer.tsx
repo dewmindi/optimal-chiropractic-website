@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import { NAVIGATION_LINKS } from '../constants';
+import { NAVIGATION_LINKS, SOCIAL_LINKS } from '../constants';
 import Link from 'next/link';
 
 const Footer: React.FC = () => {
@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
     { name: 'Facebook', url: 'https://www.facebook.com/share/1ATsAbvsYz/?mibextid=wwXIfr' },
     { name: 'Instagram', url: 'https://www.instagram.com/optimalchiro_?igsh=dzZ3ZmV3YjEzNG80&utm_source=qr' },
     { name: 'Linkedin', url: 'https://www.linkedin.com/company/optimalchiropractic/' },
-    { name: 'TikTok', url: 'www.tiktok.com/@optimalchiropractic' },
+    { name: 'TikTok', url: 'https://www.tiktok.com/@optimal.chiroprac?_r=1&_t=ZS-94DHtL03nVw' },
   ];
 
   const getHref = (link: string) => {
@@ -47,7 +47,7 @@ const Footer: React.FC = () => {
 
         {/* Social Links */}
         <div className="flex gap-6">
-           {socialLinks.map((social) => (
+           {SOCIAL_LINKS.map((social) => (
              <a 
                key={social.name}
                href={social.url}

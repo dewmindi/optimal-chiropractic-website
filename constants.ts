@@ -1,9 +1,9 @@
-import { 
-  Activity, 
-  UserCheck, 
-  ShieldCheck, 
-  Move, 
-  Brain, 
+import {
+  Activity,
+  UserCheck,
+  ShieldCheck,
+  Move,
+  Brain,
   HeartHandshake,
   Stethoscope,
   Sparkles,
@@ -19,7 +19,7 @@ import PostureCorrection from './public/PostureCorrection.webp';
 import Spinal from './public/SpinalOrthotics.webp';
 import SpinalTherapy from './public/SpinalWellnessTherapy.webp';
 import YStrap from './public/YStrapAdjustment.webp';
-import ChiropracticDoctor from './public/ChiropracticDoctor.jpeg';  
+import ChiropracticDoctor from './public/ChiropracticDoctor.jpeg';
 
 import ChiropracticTreatment from './public/Chiropractic-assessment-treatement.webp';
 import OrthoticTreatment from './public/Orthotic-therapy-treatment.webp';
@@ -228,7 +228,7 @@ export const TREATMENTS_BENTO = [
     colSpan: "col-span-1 md:col-span-1",
     rowSpan: "row-span-1"
   },
-    {
+  {
     id: 't4',
     title: "Orthotic Therapy",
     subtitle: "Foundation Support",
@@ -236,7 +236,7 @@ export const TREATMENTS_BENTO = [
     colSpan: "col-span-1 md:col-span-1",
     rowSpan: "row-span-1"
   },
-      {
+  {
     id: 't5',
     title: "Spinal Wellness Therapy",
     subtitle: "Foundation Support",
@@ -277,14 +277,14 @@ export const TESTIMONIALS = [
 
 export const CONTACT_INFO = {
   address: "107 South Road, Braybrook, Victoria, 3019",
-  phone: " 039 386 9863",
+  phone: "03 9386 9863",
   email: "info@optimalchiropractic.com.au",
   hours: "Mon-Fri: 9am - 7pm | Sat - Sun : 9am - 12pm"
 };
 
 export const SOCIAL_LINKS = [
+  { name: 'Facebook', url: 'https://www.facebook.com/share/1ATsAbvsYz/?mibextid=wwXIfr' },
   { name: 'Instagram', url: 'https://www.instagram.com/optimalchiro_?igsh=dzZ3ZmV3YjEzNG80&utm_source=qr' },
-  { name: 'Facebook', url: 'https://www.facebook.com/share/1ATsAbvsYz/?mibextid=wwXIfr'},
-  { name: 'LinkedIn', url: 'https://www.linkedin.com/company/optimalchiropractic/' },
-  { name: 'TikTok', url: 'https://www.tiktok.com/@optimalchiropractic' },
+  { name: 'Linkedin', url: 'https://www.linkedin.com/company/optimalchiropractic/' },
+  { name: 'TikTok', url: 'https://www.tiktok.com/@optimal.chiroprac?_r=1&_t=ZS-94DHtL03nVw' },
 ];
