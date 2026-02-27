@@ -286,5 +286,5 @@ export const SOCIAL_LINKS = [
   { name: 'Facebook', url: 'https://www.facebook.com/share/1ATsAbvsYz/?mibextid=wwXIfr' },
   { name: 'Instagram', url: 'https://www.instagram.com/optimalchiro_?igsh=dzZ3ZmV3YjEzNG80&utm_source=qr' },
   { name: 'Linkedin', url: 'https://www.linkedin.com/company/optimalchiropractic/' },
-  { name: 'TikTok', url: 'https://www.tiktok.com/@optimal.chiroprac?_r=1&_t=ZS-94DHtL03nVw' },
+  { name: 'TikTok', url: 'https://www.tiktok.com/@optimal.chiropractic?_r=1&_t=ZS-94G9eQxw8eO' },
 ];
