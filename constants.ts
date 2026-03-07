@@ -206,17 +206,17 @@ export const WHY_CHOOSE_US_CONTENT = [
 export const TREATMENTS_BENTO = [
   {
     id: 't1',
-    title: "Y-Strap Adjustment",
-    subtitle: "Decompression",
-    image: YStrap,
+    title: "Spinal Decompression",
+    subtitle: "Non-surgical relief",
+    image: Spinal,
     colSpan: "col-span-1 md:col-span-2",
     rowSpan: "row-span-2"
   },
   {
     id: 't2',
-    title: "Spinal Decompression",
-    subtitle: "Non-surgical relief",
-    image: Spinal,
+    title: "Y-Strap Adjustment ",
+    subtitle: "Decompression",
+    image: YStrap,
     colSpan: "col-span-1",
     rowSpan: "row-span-1"
   },
