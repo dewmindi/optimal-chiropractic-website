@@ -64,21 +64,24 @@ const Navbar: React.FC = () => {
             ))}
           </div>
 
-          {/* Mobile Toggle */}
-          <div className="md:hidden">
-            <button
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="text-brand-black focus:outline-none"
+          {/* Right side container: Book Now + Mobile Toggle */}
+          <div className="flex items-center space-x-4 ml-auto md:w-32 md:justify-end">
+            <button 
+              onClick={() => setBookingModalOpen(true)} 
+              className="text-xs font-bold uppercase tracking-widest bg-brand-orange p-2 rounded-md hover:opacity-80 transition-opacity"
             >
-              {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-            </button>
-          </div>
-
-          {/* Placeholder for balance on right side desktop */}
-          <div className="hidden md:block w-32 text-right">
-            <button onClick={() => setBookingModalOpen(true)} className="text-xs font-bold uppercase tracking-widest bg-brand-orange p-2 rounded-md hover:border-brand-orange transition-colors">
               Book Now
             </button>
+
+            {/* Mobile Toggle */}
+            <div className="md:hidden flex items-center">
+              <button
+                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                className="text-brand-black focus:outline-none"
+              >
+                {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+              </button>
+            </div>
           </div>
         </div>
       </nav>
@@ -102,14 +105,6 @@ const Navbar: React.FC = () => {
                 {link.name}
               </Link>
             ))}
-            <div className="pt-8">
-              <button
-                onClick={() => { setMobileMenuOpen(false); setBookingModalOpen(true); }}
-                className="px-8 py-3 bg-brand-black text-cream uppercase tracking-widest text-sm"
-              >
-                Book Appointment
-              </button>
-            </div>
           </motion.div>
         )}
       </AnimatePresence>
