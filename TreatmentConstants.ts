@@ -4,63 +4,68 @@ import {
   Heart, 
   Zap, 
   Smile, 
-  UserCheck 
+  UserCheck,
+  Scan,
+  Footprints,
+  Move,
+  ShieldCheck,
+  Smartphone
 } from 'lucide-react';
 
 export const TREATMENT_HERO = {
-  title: "Targeted Treatments",
-  subtitle: "Relief for Your Unique Condition",
-  description: "We don't just treat symptoms; we address the underlying structural causes of your pain. Our evidence-based approach is effective for a wide range of musculoskeletal conditions."
+  title: "Specialized Techniques",
+  subtitle: "Advanced Care tailored for you",
+  description: "We employ a diverse range of evidence-based chiropractic techniques to address your specific needs. From gentle, low-force adjustments to advanced spinal decompression, our methods are designed to restore function and alleviate pain."
 };
 
-export const CONDITIONS_TREATED = [
+export const TREATMENT_TECHNIQUES = [
   {
-    id: "sciatica",
-    title: "Sciatica & Leg Pain",
-    description: "Sharp, shooting pain traveling down the leg caused by sciatic nerve compression.",
-    symptoms: ["Lower back pain", "Burning sensation down leg", "Numbness or tingling", "Weakness in leg/foot"],
-    approach: "We focus on relieving pressure on the sciatic nerve through specific lumbar adjustments and spinal decompression techniques.",
-    icon: Zap
-  },
-  {
-    id: "neck-pain",
-    title: "Neck Pain & Headaches",
-    description: "Chronic tension, stiffness, and migraines often stemming from cervical misalignment.",
-    symptoms: ["Stiff neck", "Tension headaches", "Migraines", "Reduced range of motion"],
-    approach: "Gentle cervical adjustments restore proper curve and alignment, reducing muscle tension and nerve irritation.",
-    icon: Brain
-  },
-  {
-    id: "back-pain",
-    title: "Lower Back Pain",
-    description: "Aching or sharp pain in the lumbar region, often aggravated by sitting or lifting.",
-    symptoms: ["Dull aching", "Muscle spasms", "Sharp pain with movement", "Difficulty standing straight"],
-    approach: "We correct pelvic and lumbar subluxations to restore stability and function to the lower spine.",
+    id: "sot",
+    title: "Sacro Occipital Technique (SOT)",
+    description: "A gentle, non-force technique using wedge-shaped blocks to correct the pelvis and spine.",
+    benefits: ["Pelvic stability", "Gentle correction", "Nervous system balance", "Ideal for sensitive patients"],
+    details: "We use gravity and precise blocking to align the pelvis and restore the rhythmic flow of cerebrospinal fluid between the sacrum and cranium.",
     icon: Activity
   },
   {
-    id: "posture",
-    title: "Postural Issues",
-    description: "Structural imbalances like 'tech neck' or scoliosis that lead to chronic strain.",
-    symptoms: ["Slumped shoulders", "Forward head carriage", "Uneven hips", "Fatigue"],
-    approach: "A combination of adjustments, corrective exercises, and ergonomic advice to retrain your body's alignment.",
-    icon: UserCheck
+    id: "y-strap",
+    title: "Y-Strap Adjustment",
+    description: "High-velocity, low-amplitude manual decompression tool for the cervical spine.",
+    benefits: ["Deep decompression", "Neck stiffness relief", "Tension headache relief", "Improved disc hydration"],
+    details: "By creating a sudden, controlled distraction force along the Y-axis of the body, we decompress spinal discs and release built-up pressure.",
+    icon: Move
   },
   {
-    id: "sports",
-    title: "Sports Injuries",
-    description: "Injuries sustained during physical activity, affecting joints, muscles, and ligaments.",
-    symptoms: ["Joint pain", "Swelling", "Reduced flexibility", "Instability"],
-    approach: "We aim to speed up recovery, restore joint mobility, and prevent future injuries through targeted care.",
-    icon: Heart
+    id: "posture-analysis",
+    title: "Digital Posture Analysis",
+    description: "Assessing spinal alignment and postural deviations with advanced imaging technology.",
+    benefits: ["Visual alignment map", "Objective progress tracking", "Identify hidden imbalances", "Data-driven care"],
+    details: "We capture digital images to calculate precise angles of deviation, creating a benchmark to track your structural correction progress objectively.",
+    icon: Scan
   },
   {
-    id: "wellness",
-    title: "Wellness & Prevention",
-    description: "Proactive care to maintain optimal health and prevent future issues.",
-    symptoms: ["General fatigue", "Minor aches", "Desire for better health", "Stress"],
-    approach: "Regular check-ups to ensure your nervous system is functioning at 100%, supporting overall vitality.",
+    id: "orthotic",
+    title: "Orthotic Therapy",
+    description: "Custom-molded shoe inserts to correct biomechanical faults in the feet.",
+    benefits: ["Arch support", "Improved gait", "Reduced knee/hip strain", "Solid foundation"],
+    details: "We analyze your foot mechanics to create orthotics that restore your natural arch, providing a stable foundation for your entire skeletal structure.",
+    icon: Footprints
+  },
+  {
+    id: "spinal-wellness",
+    title: "Spinal Wellness Therapy",
+    description: "Proactive maintenance care to keep your spine healthy and prevent future issues.",
+    benefits: ["Preventative care", "Sustained mobility", "Stress reduction", "Overall vitality"],
+    details: "Regular check-ups that focus on function rather than just pain relief, ensuring your nervous system remains free of interference for the long term.",
     icon: Smile
+  },
+  {
+    id: "chiro-adjustment",
+    title: "Chiropractic Adjustment",
+    description: "Precise manual thrusts applied to spinal joints to restore motion and alignment.",
+    benefits: ["Pain reduction", "Restored motion", "Joint function", "Nerve irritation relief"],
+    details: "We utilize specific, controlled techniques to clear subluxations, allowing your brain and body to communicate effectively without interference.",
+    icon: ShieldCheck
   }
 ];
 

@@ -32,6 +32,16 @@ const Testimonials: React.FC = () => {
           </FadeIn>
         ))}
       </div>
+      <div className='flex justify-center mt-4'>
+        <a 
+              href="https://www.google.com/search?sca_esv=4ae20d8bd47daad1&rlz=1C5CHFA_enLK1153LK1153&sxsrf=ANbL-n6OFWnbxJ4jUQ6iYbEblOjMKUSUyQ:1773750231619&si=AL3DRZEsmMGCryMMFSHJ3StBhOdZ2-6yYkXd_doETEE1OR-qOTpJ0zpcVfgvYFHhgKVdhYBcVR-dMoCIuwnhIQO5pdFVJjYzs4RcgI1xIlKEuBeuVnNrHA2gNi7dEjjUYYwnz95a-L3VguWadFtfbbRz2iZpRp4kxw%3D%3D&q=Optimal+Chiropractic+Braybrook+Reviews&sa=X&ved=2ahUKEwikiOfD9qaTAxXA3zQHHdrBN_8Q0bkNegQISRAH&cshid=1773750258705180&biw=1920&bih=958&dpr=1"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-8 py-4 border border-cream/20 bg-brand-orange text-white uppercase hover:bg-white hover:text-brand-black transition-colors  tracking-widest text-xs"
+            >
+              View More
+            </a>
+      </div>
     </Section>
   );
 };

@@ -6,7 +6,7 @@ import { Plus, Minus, ArrowRight } from 'lucide-react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../sections/Footer';
 import { Section, FadeIn } from '../../components/Section';
-import { TREATMENT_HERO, CONDITIONS_TREATED, TREATMENT_APPROACH, TREATMENT_FAQ } from '../../TreatmentConstants';
+import { TREATMENT_HERO, TREATMENT_TECHNIQUES, TREATMENT_APPROACH, TREATMENT_FAQ } from '../../TreatmentConstants';
 import Link from 'next/link';
 
 export default function TreatmentsPage() {
@@ -35,30 +35,30 @@ export default function TreatmentsPage() {
           </div>
         </Section>
 
-        {/* Conditions Grid */}
+        {/* Techniques Grid */}
         <Section className="bg-white/50 py-24">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {CONDITIONS_TREATED.map((condition, index) => (
-              <FadeIn key={condition.id} delay={index * 0.1} className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-shadow duration-300 border border-gray-100 group">
+            {TREATMENT_TECHNIQUES.map((technique, index) => (
+              <FadeIn key={technique.id} delay={index * 0.1} className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-shadow duration-300 border border-gray-100 group">
                 <div className="w-12 h-12 bg-brand-orange/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-brand-orange group-hover:text-white transition-colors duration-300">
-                  <condition.icon size={24} className="text-brand-orange group-hover:text-white transition-colors" />
+                  <technique.icon size={24} className="text-brand-orange group-hover:text-white transition-colors" />
                 </div>
                 
-                <h3 className="font-heading text-2xl text-brand-black mb-3">{condition.title}</h3>
-                <p className="text-brand-black/60 text-sm mb-4 leading-relaxed">{condition.description}</p>
+                <h3 className="font-heading text-2xl text-brand-black mb-3">{technique.title}</h3>
+                <p className="text-brand-black/60 text-sm mb-4 leading-relaxed">{technique.description}</p>
                 
                 <div className="space-y-4">
                   <div>
-                    <span className="text-xs font-bold uppercase tracking-widest text-brand-black/40 mb-2 block">Symptoms</span>
+                    <span className="text-xs font-bold uppercase tracking-widest text-brand-black/40 mb-2 block">Key Benefits</span>
                     <div className="flex flex-wrap gap-2">
-                      {condition.symptoms.slice(0, 3).map((symptom, i) => (
-                        <span key={i} className="text-xs bg-cream px-2 py-1 rounded-md text-brand-black/70 border border-brand-black/5">{symptom}</span>
+                      {technique.benefits.slice(0, 3).map((benefit, i) => (
+                        <span key={i} className="text-xs bg-cream px-2 py-1 rounded-md text-brand-black/70 border border-brand-black/5">{benefit}</span>
                       ))}
                     </div>
                   </div>
                   
                   <div className="pt-4 border-t border-gray-100">
-                     <p className="text-sm text-brand-black/80 italic">"{condition.approach}"</p>
+                     <p className="text-sm text-brand-black/80 italic">"{technique.details}"</p>
                   </div>
                 </div>
               </FadeIn>

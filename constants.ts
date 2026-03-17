@@ -14,15 +14,16 @@ export const BRAND_NAME = "Optimal Chiropractic";
 export const DOCTOR_NAME = "Dr. Jengis Zekirovski";
 
 import ChiroAdjustment from './public/ChiropracticAdjustment.webp';
-import ChiroAssessment from './public/ChiropracticAssessment.webp';
+import ChiroAssessment from './public/ChiropracticAssessment.png';
 import PostureCorrection from './public/PostureCorrection.webp';
-import Spinal from './public/SpinalOrthotics.webp';
-import SpinalTherapy from './public/SpinalWellnessTherapy.webp';
+import Spinal from './public/Spinal.png';
+import SOT from './public/SOT-treatment.png';
+import SpinalTherapy from './public/SpinalTherapy.png';
 import YStrap from './public/YStrapAdjustment.webp';
 import ChiropracticDoctor from './public/ChiropracticDoctor.jpeg';
 
 import ChiropracticTreatment from './public/Chiropractic-assessment-treatement.webp';
-import OrthoticTreatment from './public/Orthotic-therapy-treatment.webp';
+import OrthoticTreatment from './public/OrthoticTreatment.png';
 import SpinalTreatment from './public/Spinal-wellness-therapy-treatment.webp';
 
 export const NAVIGATION_LINKS = [
@@ -206,16 +207,16 @@ export const WHY_CHOOSE_US_CONTENT = [
 export const TREATMENTS_BENTO = [
   {
     id: 't1',
-    title: "Arthrostim therapy",
+    title: "Sacro Occipital Technique (SOT)",
     subtitle: "Non-surgical relief",
-    image: Spinal,
+    image: SOT,
     colSpan: "col-span-1 md:col-span-2",
     rowSpan: "row-span-2"
   },
   {
     id: 't2',
     title: "Y-Strap Adjustment ",
-    subtitle: "Decompression",
+    subtitle: "Non-surgical relief",
     image: YStrap,
     colSpan: "col-span-1",
     rowSpan: "row-span-1"
@@ -257,20 +258,20 @@ export const TREATMENTS_BENTO = [
 export const TESTIMONIALS = [
   {
     id: 1,
-    name: "Sarah Jenkins",
-    text: "I walked in with chronic migraine pain and walked out feeling a lightness I haven't known in years. Dr. Zekirovski is a true healer.",
+    name: "Kevoo Sabir",
+    text: "Absolutely amazing experience. Dr Jengis is professional, knowledgeable, and caring. I've seen such a difference since starting treatment. Highly recommend!",
     role: "Patient"
   },
   {
     id: 2,
-    name: "Michael Ross",
-    text: "Professional, precise, and incredibly calming. The office feels more like a spa than a clinic, but the medical expertise is top-tier.",
+    name: "Angelica Salita",
+    text: "I can't speak highly enough of Dr. Jengis. From the initial consultation, he took the time to address all my questions and provided personalised treatment that yielded actual results for my neck and back pain, making every visit a positive experience. I highly recommend! Crunchy!!!!",
     role: "Athlete"
   },
   {
     id: 3,
-    name: "Elena V.",
-    text: "The Y-Strap adjustment changed my life. Years of neck tension released in a single session. Highly recommended.",
+    name: "Robert Hurley",
+    text: "Came here for neck and shoulder pain and noticed a big improvement. Friendly, professional clinic in Braybrook and everything was explained clearly. Would definitely recommend if you're looking for a local chiropractor",
     role: "Executive"
   }
 ];

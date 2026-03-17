@@ -96,7 +96,7 @@ const ServiceModal: React.FC<ServiceModalProps> = ({ isOpen, onClose, service })
 
                   <div className="pt-8 mt-auto">
                     <Link
-                      href="https://optimal-chiropractic-braybrook.au5.cliniko.com/bookings"
+                      href="https://optimal-chiropractic-braybrook.au5.cliniko.com/bookings?appointment_type_id%5B%5D=1889038022284946716&appointment_type_id%5B%5D=1883252369156747228#service"
                       target="_blank"
                       rel="noopener noreferrer"
                       onClick={onClose}
