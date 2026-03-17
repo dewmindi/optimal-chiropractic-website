@@ -21,7 +21,7 @@ const WhyChooseUs: React.FC = () => {
             </p>
             
             <a 
-              href="https://optimal-chiropractic-braybrook.au5.cliniko.com/bookings"
+              href="https://optimal-chiropractic-braybrook.au5.cliniko.com/bookings?appointment_type_id%5B%5D=1889038022284946716&appointment_type_id%5B%5D=1883252369156747228#service"
               target="_blank"
               rel="noopener noreferrer"
               className="px-8 py-4 border border-cream/20 hover:bg-cream hover:text-brand-black transition-colors uppercase tracking-widest text-xs"

@@ -19,7 +19,7 @@ const BookingModal: React.FC<BookingModalProps> = ({ isOpen, onClose }) => {
         </div>
         <iframe
           id="cliniko-65580028"
-          src="https://optimal-chiropractic-braybrook.au5.cliniko.com/bookings?embedded=true"
+          src="https://optimal-chiropractic-braybrook.au5.cliniko.com/bookings?appointment_type_id%5B%5D=1889038022284946716&appointment_type_id%5B%5D=1883252369156747228#service"
           frameBorder="0"
           scrolling="auto"
           width="100%"
