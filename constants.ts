@@ -266,13 +266,13 @@ export const TESTIMONIALS = [
     id: 2,
     name: "Angelica Salita",
     text: "I can't speak highly enough of Dr. Jengis. From the initial consultation, he took the time to address all my questions and provided personalised treatment that yielded actual results for my neck and back pain, making every visit a positive experience. I highly recommend! Crunchy!!!!",
-    role: "Athlete"
+    role: "Patient"
   },
   {
     id: 3,
     name: "Robert Hurley",
     text: "Came here for neck and shoulder pain and noticed a big improvement. Friendly, professional clinic in Braybrook and everything was explained clearly. Would definitely recommend if you're looking for a local chiropractor",
-    role: "Executive"
+    role: "Patient"
   }
 ];
 
