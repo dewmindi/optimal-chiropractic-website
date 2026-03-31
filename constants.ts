@@ -14,16 +14,17 @@ export const BRAND_NAME = "Optimal Chiropractic";
 export const DOCTOR_NAME = "Dr. Jengis Zekirovski";
 
 import ChiroAdjustment from './public/ChiropracticAdjustment.webp';
-import ChiroAssessment from './public/ChiropracticAssessment.png';
+import Chiroadjustment from './public/ChiropracticAdjustment.jpeg'
+import ChiroAssessment from './public/ChiropracticAssessment.jpeg';
 import PostureCorrection from './public/PostureCorrection.webp';
 import Spinal from './public/Spinal.png';
-import SOT from './public/SOT-treatment.png';
+import SOT from './public/SOT-treatment.webp';
 import SpinalTherapy from './public/SpinalTherapy.png';
 import YStrap from './public/YStrapAdjustment.webp';
 import ChiropracticDoctor from './public/ChiropracticDoctor.jpeg';
 
 import ChiropracticTreatment from './public/Chiropractic-assessment-treatement.webp';
-import OrthoticTreatment from './public/OrthoticTreatment.png';
+import OrthoticTreatment from './public/OrthoticTreatment.webp';
 import SpinalTreatment from './public/Spinal-wellness-therapy-treatment.webp';
 
 export const NAVIGATION_LINKS = [
@@ -106,7 +107,7 @@ export const SERVICES_CONTENT = [
       "Reduced inflammation",
       "Enhanced nervous system function"
     ],
-    image: ChiroAdjustment,
+    image: Chiroadjustment,
     icon: Move
   },
   {
@@ -134,7 +135,7 @@ export const SERVICES_CONTENT = [
       "Enhanced athletic performance",
       "Prevention of foot deformities"
     ],
-    image: Spinal,
+    image: OrthoticTreatment,
     icon: UserCheck
   },
   {
@@ -176,7 +177,7 @@ export const SERVICES_CONTENT = [
       "Boosted immune function",
       "Prevention of relapse"
     ],
-    image: SpinalTherapy,
+    image: SpinalTreatment,
     icon: Sparkles
   }
 ];
@@ -210,8 +211,8 @@ export const TREATMENTS_BENTO = [
     title: "Sacro Occipital Technique (SOT)",
     subtitle: "Non-surgical relief",
     image: SOT,
-    colSpan: "col-span-1 md:col-span-2",
-    rowSpan: "row-span-2"
+    colSpan: "col-span-1",
+    rowSpan: "row-span-1"
   },
   {
     id: 't2',
@@ -249,8 +250,8 @@ export const TREATMENTS_BENTO = [
     id: 't6',
     title: "Chiropractic Adjustment",
     subtitle: "Foundation Support",
-    image: ChiroAdjustment,
-    colSpan: "col-span-1 md:col-span-3",
+    image: Chiroadjustment,
+    colSpan: "col-span-1",
     rowSpan: "row-span-1"
   }
 ];

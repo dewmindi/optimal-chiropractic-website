@@ -1,15 +1,10 @@
 import { 
   Activity, 
-  Brain, 
-  Heart, 
-  Zap, 
   Smile, 
-  UserCheck,
   Scan,
   Footprints,
   Move,
   ShieldCheck,
-  Smartphone
 } from 'lucide-react';
 
 export const TREATMENT_HERO = {
