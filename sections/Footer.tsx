@@ -63,7 +63,7 @@ const Footer: React.FC = () => {
         {/* Legal and Address */}
         <div className="text-center text-xs text-brand-black/50 border-t border-brand-black/10 w-full pt-8 mt-4">
           <p>107 South Road, Braybrook, Victoria, 3019</p>
-          <p className="mt-2">© {new Date().getFullYear()} Optimal Chiropractic. All Rights Reserved.</p>
+          <p className="mt-2">© {new Date().getFullYear()} Optimal Chiropractic. All Rights Reserved. | Developed by <a href="https://csgraphicmeta.com.au/" target="_blank" rel="noopener noreferrer" className="hover:text-brand-orange">CS GRAPHIC META</a></p>
           <p className="mt-1">Registration: CHI0002452446 | ABN: 51 656 432 996 (Zek Chiropractic Pty Ltd)</p>
         </div>
       </div>
