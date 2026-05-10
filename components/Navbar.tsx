@@ -67,7 +67,7 @@ const Navbar: React.FC = () => {
           {/* Right side container: Book Now + Mobile Toggle */}
           <div className="flex items-center space-x-4 ml-auto md:w-32 md:justify-end">
             <a 
-              href="https://optimal-chiropractic-braybrook.au5.cliniko.com/bookings?appointment_type_id%5B%5D=1889038022284946716&appointment_type_id%5B%5D=1883252369156747228#service"
+              href="https://optimal-chiropractic-braybrook.au5.cliniko.com/bookings?appointment_type_id%5B%5D=1889038022284946716&appointment_type_id%5B%5D=1883252369156747228&apointment_type_id%5B%5D=1945322848058879214&appointment_type_id%5B%5D=1945323590459075823&appointment_type_id%5B%5D=1945322848058879214#service"
             target="_blank"
             rel="noopener noreferrer"
               className="text-xs font-bold uppercase tracking-widest bg-brand-orange p-2 rounded-md hover:opacity-80 transition-opacity"
